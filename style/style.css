@@ -31,6 +31,7 @@ body{
     position: fixed;
     width: 100%;
     z-index: 3;
+    top: 0;
   }
   
   .header ul {
@@ -193,52 +194,16 @@ nav ul li a{
 
 /* home slider */
 .home-slide {
-  background: grey;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 50px;
-  color: #fff;
-  font-weight: 500;
-  height: 75vh;
-  max-height: 100vh;
+  height: 77vh;
+  width: 100%;
+  padding: 0;
 }
-.number-slide1 {
-  background: rgb(64, 175, 255);
-  background: linear-gradient(
-    128deg,
-    rgba(64, 175, 255, 1) 0%,
-    rgba(63, 97, 255, 1) 100%
-  );
-}
-.number-slide2 {
-  background: rgb(255, 75, 64);
-  background: linear-gradient(
-    128deg,
-    rgba(255, 154, 63, 1) 0%,
-    rgba(255, 75, 64, 1) 100%
-  );
-}
-.number-slide3 {
-  background: rgb(182, 255, 64);
-  background: linear-gradient(
-    128deg,
-    rgba(182, 255, 64, 1) 0%,
-    rgba(63, 255, 71, 1) 100%
-  );
-  background: linear-gradient(
-    128deg,
-    rgba(189, 255, 83, 1) 0%,
-    rgba(43, 250, 82, 1) 100%
-  );
-}
-.number-slide4 {
-  background: rgb(64, 255, 242);
-  background: linear-gradient(
-    128deg,
-    rgba(64, 255, 242, 1) 0%,
-    rgba(63, 188, 255, 1) 100%
-  );
+.home-slide img{
+    width: 100%;
+    height: 100%;
+    background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
 }
 
 /* whatsapp-button */
@@ -298,12 +263,13 @@ nav ul li a{
 /* courses */
 #courses{
     padding-top: 0.5%;
-    background-color: #231a9e;
+    background-color: #6caee1;
 }
 
 /* card */
 .card, .card img{
    width: 300px;
+   height: 100%;
 }
 .card img{
     border-radius: 5px 5px 0 0;
@@ -320,6 +286,7 @@ nav ul li a{
 }
 .card-content h2{
     font-size: 1.2rem;
+    margin-bottom: 1%;
 }
 .card-content{
     padding: 2% 2% 5%;
@@ -328,8 +295,8 @@ nav ul li a{
     transition:top 1s;
     top: 210px;
 }
-.card-content:hover{
-    top: 100px;
+.card:hover .card-content{
+    top: 130px;
     /* padding-bottom: 100px; */
     animation-direction: alternate;
 }
@@ -348,38 +315,33 @@ nav ul li a{
 
 /* placement-slide */
 #student-placement{
-    padding: 2% 3%;
+    padding: 0.5% 2%;
+    background-color: #6caee1;
+    color: #fff;
 }
-.placement-slide{
-    margin: 0 1%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 50px;
-  color: #fff;
-  font-weight: 500;
-  max-height: 90vh;
-  
+#student-placement h1{
+    margin-bottom: 5%;
 }
 
 .placement-card {
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-height: 300px;
-max-width: 200px;
-margin: auto;
-text-align: center;
-font-family: arial;
-padding: 3% 2%;
-border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    height: 300px;
+    margin: 0 1% 3%;
+    text-align: center;
+    font-family: arial;
+    padding: 3% 1%;
+    border-radius: 10px;
+    color: #000;
+    /* display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center; */
 }
 
 .placement-card img{
-    width: 250px;
-}
-
-.placement-card .title {
-color: grey;
-font-size: 18px;
+    width: 150px;
+    height: 150px;
 }
 
 /* contact-us */
@@ -529,6 +491,9 @@ footer a{
     footer{
         text-align: center;
         margin-bottom: 10%;
+    }
+    #home-slider{
+        margin-top: 10%;
     }
     #mid-nav, #bottom-nav{
         display: none;

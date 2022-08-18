@@ -15,7 +15,7 @@ var homeSlider = new KeenSlider(
             if (mouseOver) return
             timeout = setTimeout(() => {
             homeSlider.next()
-            }, 2000)
+            }, 1500)
         }
         homeSlider.on("created", () => {
             homeSlider.container.addEventListener("mouseover", () => {
@@ -53,3 +53,4 @@ var d = new Date();
 var year = d.getFullYear()
 
 cpYear.innerHTML = year;
+

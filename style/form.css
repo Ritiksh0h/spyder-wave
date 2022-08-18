@@ -45,6 +45,10 @@ input[type="text"],input[type="email"],textarea,input[type="number"],select,inpu
 select{
     width: 100%;
 }
+form a{
+    color: #fff;
+    text-decoration: none;
+}
 /* contact-us textarea count */
 #the-count {
     float: right;
